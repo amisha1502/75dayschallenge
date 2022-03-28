@@ -12,7 +12,8 @@ class Solution {
             if(map.containsKey(currsum-k)){
                 count+=map.get(currsum-k);
             }
-            map.put(currsum,1);
+            else
+                map.put(currsum,1);
         }
         return count;
     }
